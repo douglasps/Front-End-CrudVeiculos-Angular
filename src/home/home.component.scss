@@ -1,0 +1,118 @@
+*{
+    color: rgb(65,65,65);
+}
+.nav{
+    background-color:rgb(54,65,71);
+}
+
+.nav .nav-left .nav-item.is-brand{
+    color:white;
+    padding-left: 40px;
+}
+
+.nav .nav-right.nav-search{
+    background-color: rgb(42,49,56);
+    color: rgb(110,113,115);
+}
+.conteudo{
+    padding: 40px;
+    background-color: rgb(226,228,225);
+}
+
+.home-component-titulo
+{
+    display: inline;
+}
+
+.nav-right.nav-search #filtro{
+    width: 100%;
+    display: flex;
+}
+
+#lista-veiculos{
+    display: inline-block;
+    width: 50%;
+    height: 600px;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+#detalhes-veiculo
+{
+    float: right;
+    width: 50%;
+    height: 600px;
+    max-height: 600px;
+    overflow: hidden;
+    padding-left: 20px;
+}
+
+#btnAdicionar
+{
+    background-image: url('../assets/img/add_20.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    border: none;
+    float: right;
+}
+
+.img-vendido{
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+//Overrides
+button.btn
+{
+    color: white;
+    background-color: rgb(70, 80, 90);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+button.btn.btn-icon
+{
+    padding-left: 30px;
+}
+
+button.btn.btn-icon.btn-icon-edit,
+button.btn.btn-icon.btn-icon-delete
+{
+    background-repeat: no-repeat;
+    background-position: 8px 8px;
+}
+
+button.btn.btn-icon.btn-icon-edit{
+    background-image: url('../assets/img/editar_20.png');
+}
+
+button.btn.btn-icon.btn-icon-delete
+{
+    background-image: url('../assets/img/excluir.png');
+}
+
+input[type='text'],
+textarea
+{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 1px rgb(130,130,130);
+    width: 100%;
+    background-color: transparent;
+}
+
+header{
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-weight: 400;
+}

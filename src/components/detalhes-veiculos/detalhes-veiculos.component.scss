@@ -1,0 +1,23 @@
+.detalhes-veiculo-titulo
+{
+    color: rgb(76,141,116);
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.detalhes-veiculos{
+    padding: 20px 40px;
+    background-color: rgb(240, 240, 240);
+}
+
+.detalhes-veiculo-propriedade{
+    color: rgb(195,195,195);
+}
+
+.detalhes-veiculos .img-vendido{
+    float: right;
+}
+
+.detalhes-veiculos .row.vertical-offset{
+    padding-top: 15px;
+}

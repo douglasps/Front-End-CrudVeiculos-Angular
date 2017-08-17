@@ -1,0 +1,32 @@
+<div class="modal" modal="showModal" aria-hidden="false" ng-show="$ctrl.exibir">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">{{obterTitulo()}}</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true" ng-click="$ctrl.exibir = !$ctrl.exibir">×</button>
+      </div>
+      <div class="modal-body">
+          <section>
+            <div class="row">
+              <div class="col-md-6"><input type="text" placeholder="Veículo"  ng-model="$ctrl.veiculo.veiculo" /></div>
+              <div class="col-md-6"><input type="text" placeholder="Marca"  ng-model="$ctrl.veiculo.marca" /></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><input type="text" placeholder="Ano" ng-model="$ctrl.veiculo.ano" /></div>
+              <div class="col-md-6" ng-cloak>
+                <md-switch ng-model="$ctrl.veiculo.vendido" aria-label="Vendido">Vendido</md-switch>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <textarea placeholder="Descrição" ng-model="$ctrl.veiculo.descricao" cols="40" rows="4"></textarea>
+            </div>
+          </section>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" ng-click="ok();$ctrl.exibir = !$ctrl.exibir">{{obterTextoBotaoOk()}}</button>
+        <button type="button" class="btn" data-dismiss="modal" ng-click="$ctrl.exibir = !$ctrl.exibir">FECHAR</button>
+      </div>
+    </div>
+  </div>
+</div>

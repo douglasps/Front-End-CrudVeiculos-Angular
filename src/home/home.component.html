@@ -1,0 +1,34 @@
+<div>
+<nav class="nav">
+  <div class="nav-left">
+    <a class="nav-item is-brand" href="#">
+      <img src="../assets/img/brand_40.png">
+      FULLSTACK
+    </a>
+  </div>
+
+  <div class="nav-center">
+  </div>
+
+  <div class="nav-right nav-search">
+    <filtro-veiculos id="filtro" filtro="$ctrl.filtro"></filtro-veiculos>
+  </div>
+</nav>
+
+  <section class="conteudo">
+    <div>
+      <header class="home-component-titulo">VEÍCULO</header>
+      <button id="btnAdicionar" class="pull-right" ng-click="$ctrl.veiculo = null;$ctrl.exibir = !$ctrl.exibir" ></button>
+    </div>
+    <hr/>
+    <div>
+      <div id="lista-veiculos">
+        <lista-veiculos filtro="$ctrl.filtro" veiculo="$ctrl.veiculo"></lista-veiculos>
+      </div>
+      <div id="detalhes-veiculo">
+        <detalhes-veiculos veiculo="$ctrl.veiculo" exibir="$ctrl.exibir"></detalhes-veiculos>
+      </div>
+    </div>
+  </section>
+</div>
+<editor-veiculos veiculo="$ctrl.veiculo" exibir="$ctrl.exibir"></editor-veiculos>

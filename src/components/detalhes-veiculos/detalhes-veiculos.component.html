@@ -1,0 +1,37 @@
+<section>
+    <header>Detalhes</header>
+    <div class="detalhes-veiculos">
+        <div class="row vertical-offset">
+            <div class="col-md-12">
+                <span class="detalhes-veiculo-titulo">{{$ctrl.veiculo.veiculo}}</span>
+            </div>
+        </div>
+        <div class="row vertical-offset">
+            <div class="col-md-6">
+                <span class="detalhes-veiculo-caption">Marca</span>
+            </div>
+            <div class="col-md-6">
+                <span class="detalhes-veiculo-caption">Ano</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <span class="detalhes-veiculo-propriedade">{{$ctrl.veiculo.marca}}</span>
+            </div>
+            <div class="col-md-6">
+                <span class="detalhes-veiculo-propriedade">{{$ctrl.veiculo.ano}}</span>
+            </div>
+        </div>
+        <div class="row vertical-offset">
+            <div class="col-md-12">
+                <span class="detalhes-veiculo-caption">{{$ctrl.veiculo.descricao}}</span>
+            </div>
+        </div>
+        <hr/>
+        <div>
+            <button type="button" class="btn btn-icon btn-icon-edit"  ng-click="$ctrl.exibir = !$ctrl.exibir" class="pull-left">EDITAR</button>
+            <button type="button" class="btn btn-icon btn-icon-delete"  ng-click="excluir()" class="pull-left">EXCLUIR</button>
+            <img src='{{ imgVendido }}' class="img-vendido" alt="" class="pull-right"/>
+        </div>
+    </div>
+</section>

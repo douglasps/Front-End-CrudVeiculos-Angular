@@ -1,0 +1,22 @@
+<section>
+    <header>Lista de veículos</header>
+    <div ng-repeat="veiculo in listarVeiculos() | filter:$ctrl.filtro" ng-init="$ctrl.veiculo = listarVeiculos()[0]">
+        <div class="lista-veiculos-item" 
+        ng-class="{'selecionado':$ctrl.veiculo == veiculo}" 
+        ng-click="$ctrl.veiculo = veiculo; ">
+            <div class="lista-veiculos-item-esquerda">
+                <span class="lista-veiculos-item-propriedade marca">{{veiculo.marca}}</span>
+                <span class="lista-veiculos-item-propriedade veiculo">{{veiculo.veiculo}}</span>
+                <span class="lista-veiculos-item-propriedade ano">{{veiculo.ano}}</span>
+            </div>
+            <div class="lista-veiculos-item-direita">
+                <div class="lista-veiculos-item-vendido">
+                    <img class="img-vendido" src="{{ObterImagemItemVendido(veiculo.vendido)}}"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="carregando" ng-show="mostrarMensagem">
+        Por favor aguarde o carregamento dos veículos...
+    </div>
+</section>

@@ -1,0 +1,49 @@
+.lista-veiculos-item
+{
+    width: 100%;
+    min-height: 80px;
+    margin-bottom:10px;
+    background-color: white;
+    display: inline-block;
+    padding: 10px;
+}
+
+.selecionado{
+    background-color: rgb(241, 242, 240);
+}
+
+.lista-veiculos-item-esquerda
+{
+    float: left;
+}
+
+.lista-veiculos-item-direita
+{
+    float: right;
+    height: 80px;
+    display: table;
+}
+
+.lista-veiculos-item-propriedade {
+    display: block;
+}
+
+.lista-veiculos-item-propriedade.veiculo {
+    color: rgb(29, 117, 85);
+}
+
+.lista-veiculos-item-propriedade.ano{
+    color: rgb(125,125,125);
+}
+
+.lista-veiculos-item-vendido{
+    vertical-align: middle;
+    display: table-cell;
+    max-height: 20px;
+}
+
+#carregando{
+    vertical-align: middle;
+    color:rgb(29, 117, 85);
+    font-size: 20px;
+}
